@@ -1,0 +1,42 @@
+#!/usr/bin/env node
+(function(define) {'use strict'
+	define("latte", ["require", "exports", "module", "window"], 
+		function(require, exports, module, window) {
+			
+
+			
+			var web = function(methodName) {
+				var applyArray = Array.prototype.splice.call(arguments, 1);
+	 			methodName = methodName || "start";
+	 			var handle ;
+	 			process.argv.splice(1, 0, "/usr/local/bin/latte"); 
+	 			try {
+	 				handle = require(__dirname+"/./command/"+methodName);
+	 			}catch(e) {
+	 				console.log(e);
+	 				return console.log("no the method:"+methodName);
+	 			}
+	 		
+	 			handle.apply(null, applyArray);
+			};
+			(function() {
+				this.start = function() {
+					var config = GetConfig();
+					var index = process.argv.indexOf("web");
+					if(index != -1) {
+						process.argv[index] = __dirname + "/web";
+					}
+					config =  config || {
+						port : 11111,
+						cpus: 2
+					};
+					console.log(config);
+					var Server = require("../lib");
+		            var server = new Server(config);
+		            
+		            server.run();
+				}
+			}).call(web);
+			module.exports = web;
+		});
+})(typeof define === "function"? define: function(name, reqs, factory) { factory(require, exports, module); });
