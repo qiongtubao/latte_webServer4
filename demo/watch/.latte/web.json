@@ -1,8 +1,0 @@
-{
-	"port": 11112,
-	"webPath": "./handle",
-	"rpc": {
-		"rpcPath": "./rpc"
-	},
-	"watchWeb": 1
-}

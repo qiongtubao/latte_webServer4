@@ -1,8 +1,0 @@
-{
-	"port": 11111,
-	"rpc": {
-		"rpcPath": "./rpc"
-	},
-	"webPath": "handle",
-	"restart": 1
-}
