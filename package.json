@@ -1,3 +1,22 @@
 {
-	
+	"name": "latte_web4",
+	"version": "0.0.1",
+	"description": "latte_webServer4",
+	"keywords": ["lattte_webServer4"],
+	"author": "qiongtubao",
+	"main": "index.js",
+	"repository": {
+		"type": "git",
+		"url":"https://github.com/qiongtubao/latte_webServer4.git"
+	}	,
+	"bin": {
+		"web": "bin/web"
+	},
+	"dependencies": {
+		"latte_lib": "*",
+		"latte_db": "*",
+		"latte_require": "*",
+		"latte_watch": "*",
+		"ws": "*"
+	}
 }
