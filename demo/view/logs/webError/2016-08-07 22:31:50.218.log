@@ -1,0 +1,18 @@
+/hello
+gets:{
+
+}
+{
+
+}
+TypeError: Cannot read property 'jade' of undefined
+    at __dirname.render (/Users/zhouguodong/Documents/github/latte_shell_modules/latte_webServer4/lib/view/index.js:8:13)
+    at ServerResponse.res.sendView (/Users/zhouguodong/Documents/github/latte_shell_modules/latte_webServer4/lib/server/web/index.js:225:34)
+    at __dirname.get (web/test.js:3:7)
+    at /Users/zhouguodong/Documents/github/latte_shell_modules/latte_webServer4/lib/server/web/index.js:54:13
+    at /Users/zhouguodong/Documents/github/latte_lib/lib/async.js:704:23
+    at /Users/zhouguodong/Documents/github/latte_lib/lib/async.js:249:19
+    at iterate (/Users/zhouguodong/Documents/github/latte_lib/lib/async.js:151:15)
+    at __dirname.forEachSeries.eachSeries (/Users/zhouguodong/Documents/github/latte_lib/lib/async.js:166:13)
+    at _asyncMap (/Users/zhouguodong/Documents/github/latte_lib/lib/async.js:248:15)
+    at Object.mapSeries (/Users/zhouguodong/Documents/github/latte_lib/lib/async.js:229:25)

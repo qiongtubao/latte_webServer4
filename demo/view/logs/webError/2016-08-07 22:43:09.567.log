@@ -1,0 +1,18 @@
+/hello
+gets:{
+
+}
+{
+
+}
+TypeError: Cannot read property 'toString' of undefined
+    at /Users/zhouguodong/Documents/github/latte_shell_modules/latte_webServer4/lib/server/web/index.js:218:19
+    at /Users/zhouguodong/Documents/github/latte_lib/lib/async.js:254:19
+    at __dirname.forEach.each (/Users/zhouguodong/Documents/github/latte_lib/lib/async.js:85:13)
+    at _asyncMap (/Users/zhouguodong/Documents/github/latte_lib/lib/async.js:248:15)
+    at Object.map (/Users/zhouguodong/Documents/github/latte_lib/lib/async.js:215:25)
+    at _parallel (/Users/zhouguodong/Documents/github/latte_lib/lib/async.js:612:22)
+    at Object.__dirname.parallel (/Users/zhouguodong/Documents/github/latte_lib/lib/async.js:668:11)
+    at __dirname.send (/Users/zhouguodong/Documents/github/latte_shell_modules/latte_webServer4/lib/server/web/index.js:213:21)
+    at ServerResponse.res.send (/Users/zhouguodong/Documents/github/latte_shell_modules/latte_webServer4/lib/server/web/index.js:229:11)
+    at ServerResponse.res.sendView (/Users/zhouguodong/Documents/github/latte_shell_modules/latte_webServer4/lib/server/web/index.js:226:10)
