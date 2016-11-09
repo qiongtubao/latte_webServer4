@@ -6,7 +6,7 @@
 			momory: process.memoryUsage()
 		});
 	}
-	console.log("???");
+	
 	this.master = function(callback) {
 		var time = Date.now();
 		this.rpc.CallAll("hearbeat", [], function(err, data){

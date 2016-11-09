@@ -1,6 +1,6 @@
 (function() {
 	this.get = function(req, res) {
-		res.send("go ! to");
+		res.send("it's latte work");
 	}
-	this.path = "/hello";
+	this.path = "/";
 }).call(module.exports);	
