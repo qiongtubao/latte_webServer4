@@ -1,7 +1,9 @@
 var config = {
-	port: 10065,
+	port: 8080,
 	proxy: {
-		proxyUrl: "www.baidu.com"
+		paths: {
+			"/baidu":"www.baidu.com"
+		}
 	}
 };
 var Server = require("../../");

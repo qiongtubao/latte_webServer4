@@ -7,7 +7,7 @@
 	4.rpc  返回到web/test.js
 */
 var config = {
-	port: 10065,
+	port: 8080,
 	rpc: {
 		loadPath:"./rpc"
 	},

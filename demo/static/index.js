@@ -1,5 +1,5 @@
 var config = {
-	port: 10065,
+	port: 8080,
 	staticWeb: {
 		paths: {
 			"/": "./html"

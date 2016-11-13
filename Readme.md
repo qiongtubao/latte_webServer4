@@ -1,4 +1,12 @@
 # latte_webServer4
+
+详细请看[文档](https://github.com/qiongtubao/latte_webServer4/wiki)
+
+下面只是简单讲讲用法而已
+
+```bash
+$ npm install latte_webServer4
+```
 index.js
 ```js
 var config = {
@@ -30,3 +38,6 @@ $ node index.js
 ```
 
 open http://127.0.0.1:8080
+
+
+有什么问题都可联系810776886@qq.com

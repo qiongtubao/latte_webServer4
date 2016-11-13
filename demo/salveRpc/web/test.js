@@ -1,5 +1,7 @@
 (function() {
+	process.num = 0;
 	this.get = function(req, res) {
+		process.num++;
 		process.latte.rpc.Call("test", [], function(err, data) {
 			res.sendView(
 				"json",{

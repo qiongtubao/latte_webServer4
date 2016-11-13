@@ -6,7 +6,7 @@
 		})
 	}
 	this.slave = function(callback) {
-		callback(null, ++num)
+		callback(null, process.num)
 	}
 	this.method = "test"
 }).call(module.exports);

@@ -1,8 +1,13 @@
 var config = {
-	port: 10065,
+	port: 8080,
 	web: {
 		loadPath: "./web",
 		reloadTime: 1000
+	},
+	staticWeb: {
+		paths: {
+			"/": "./html/"
+		}
 	},
 	cpus:1
 };
